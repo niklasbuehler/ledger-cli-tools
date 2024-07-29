@@ -1,5 +1,3 @@
-#!/bin/python3
-
 import csv
 from datetime import datetime
 from collections import defaultdict
