@@ -7,6 +7,13 @@
 <body>
     <h1>Financial Overview</h1>
     <img src="data:image/png;base64,{{ plot_income_expenses }}" alt="Monthly Income/Expenses">
+    <img src="data:image/png;base64,{{ plot_net_worth }}" alt="Monthly Net Worth">
+    <img src="data:image/png;base64,{{ plot_expenses }}" alt="Expenses">
+    <img src="data:image/png;base64,{{ plot_income }}" alt="Income">
+    <img src="data:image/png;base64,{{ plot_cash_flow_histogram }}" alt="Cash Flow Histogram">
+    <!--<img src="data:image/png;base64,{{ plot_cash_flow_heatmap }}" alt="Cash Flow Heatmap">-->
+    <img src="data:image/png;base64,{{ plot_yearly_expense_summary }}" alt="Yearly Expense Summary">
+    
     <div class="container mt-4">
         <h1>Raw Data</h1>
         {{ df_raw_html | safe }}
